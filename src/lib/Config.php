@@ -16,6 +16,7 @@ class Config
                     "port" => (int) (getenv("REDIS_PORT") ?: 6379),
                 ],
                 "trailing_slash" => getenv("TRAILING_SLASH") ?: "never",
+                "vite_port" => getenv("VITE_PORT") ?: "5173",
             ];
         }
         return self::$config;

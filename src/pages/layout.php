@@ -17,7 +17,7 @@
     })()
     </script>
 <?php if (IS_DEV):
-    $vitePort = getenv('VITE_PORT') ?: 5173;
+    $vitePort = Config::get('vite_port', '5173');
     $viteUrl = "http://localhost:{$vitePort}";
     $pageJs =
         $pageFile === ""
