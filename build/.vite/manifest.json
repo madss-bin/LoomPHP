@@ -1,0 +1,24 @@
+{
+  "_vendor-ui-bJBaUN70.js": {
+    "file": "assets/js/vendor-ui-bJBaUN70.js",
+    "name": "vendor-ui"
+  },
+  "src/app.js": {
+    "file": "assets/js/app-BHg2RIJ1.js",
+    "name": "app",
+    "src": "src/app.js",
+    "isEntry": true,
+    "imports": [
+      "_vendor-ui-bJBaUN70.js"
+    ],
+    "css": [
+      "assets/css/app-DcckYt1X.css"
+    ]
+  },
+  "src/pages/index.js": {
+    "file": "assets/js/index--cFnwu2v.js",
+    "name": "index",
+    "src": "src/pages/index.js",
+    "isEntry": true
+  }
+}

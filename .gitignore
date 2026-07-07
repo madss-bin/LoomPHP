@@ -1,0 +1,7 @@
+vendor/
+node_modules/
+public/assets/
+!public/assets/.gitkeep
+.env
+.DS_Store
+AGENTS.md
