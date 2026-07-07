@@ -3,10 +3,10 @@
   "private": true,
   "scripts": {
     "dev": "concurrently -n php,vite \"npm run dev:php\" \"npm run dev:vite\"",
-    "dev:php": "PORT=$(node src/utils/env.js PORT 8000) && echo \"⚡ PHP on http://localhost:$PORT\" && PATH=\"$HOME/.local/bin:$PATH\" php -S localhost:$PORT -t public public/router.php 2>/dev/null",
+    "dev:php": "node src/utils/serve-php.js",
     "dev:vite": "vite",
     "build": "vite build",
-    "start": "APP_ENV=production PATH=\"$HOME/.local/bin:$PATH\" php -S 0.0.0.0:$(node src/utils/env.js PORT 8000) -t public public/router.php"
+    "start": "cross-env APP_ENV=production node src/utils/serve-php.js"
   },
   "dependencies": {
     "basecoat-css": "^1.0.2"
@@ -14,6 +14,7 @@
   "devDependencies": {
     "@tailwindcss/vite": "^4.0.0",
     "concurrently": "^9.0.0",
+    "cross-env": "^7.0.3",
     "glob": "^13.0.6",
     "lightningcss": "^1.32.0",
     "tailwindcss": "^4.0.0",
