@@ -1,3 +1,4 @@
+<?php use LoomPHP\Config; ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -29,9 +30,9 @@
                 : (file_exists(__DIR__ . "/{$pageFile}.js")
                     ? "{$viteUrl}/src/pages/{$pageFile}.js"
                     : null)); ?>
-    <script type="module" src="{$viteUrl}/@vite/client"></script>
-    <link rel="stylesheet" href="{$viteUrl}/src/app.css">
-    <script type="module" src="{$viteUrl}/src/app.js"></script>
+    <script type="module" src="<?= $viteUrl ?>/@vite/client"></script>
+    <link rel="stylesheet" href="<?= $viteUrl ?>/src/app.css">
+    <script type="module" src="<?= $viteUrl ?>/src/app.js"></script>
     <?php if ($pageJs): ?>
     <script type="module" src="<?= $pageJs ?>"></script>
     <?php endif; ?>
