@@ -67,7 +67,7 @@
                         </button>
 
                         <div id="cmd-git" class="term-pane space-y-1">
-                            <div><span class="text-emerald-500">$</span> git clone https://github.com/user/loomphp</div>
+                            <div><span class="text-emerald-500">$</span> git clone https://github.com/madss-bin/loomphp</div>
                             <div><span class="text-emerald-500">$</span> cd loomphp</div>
                             <div><span class="text-emerald-500">$</span> composer install && npm install</div>
                             <div class="text-neutral-500 mt-2"># Start development environment</div>

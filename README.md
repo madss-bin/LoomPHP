@@ -9,7 +9,7 @@ Ensure you have **PHP 8.1+**, **Composer**, and **Node.js (v18+)** installed.
 
 ### 2. Clone the Repository
 ```bash
-git clone https://github.com/user/loomphp && cd loomphp
+git clone https://github.com/madss-bin/loomphp && cd loomphp
 ```
 
 ### 3. Install Dependencies

@@ -85,7 +85,7 @@ function docAnchor(string $s): string
                     <div>
                         <p class="mb-2 font-medium text-foreground">1. Clone the repository</p>
                         <div class="rounded-xl bg-card p-4 shadow-sm ring-1 ring-black/[0.03] dark:ring-white/[0.03]">
-                            <code class="block text-xs leading-relaxed">git clone https://github.com/user/loomphp<br>cd loomphp</code>
+                            <code class="block text-xs leading-relaxed">git clone https://github.com/madss-bin/loomphp<br>cd loomphp</code>
                         </div>
                     </div>
 
