@@ -3,11 +3,15 @@ import tailwindcss from '@tailwindcss/vite'
 import { globSync } from 'glob'
 
 const pages = globSync('src/pages/**/index.js').reduce((acc, path) => {
-  if (path === 'src/pages/index.js') {
-    acc['index'] = path
+  const normalizedPath = path.replace(/\\/g, '/');
+  if (normalizedPath === 'src/pages/index.js') {
+    acc['index'] = normalizedPath
   } else {
-    const name = path.match(/src\/pages\/(.+)\/index\.js$/)[1]
-    acc[name] = path
+    const match = normalizedPath.match(/src\/pages\/(.+)\/index\.js$/)
+    if (match) {
+      const name = match[1]
+      acc[name] = normalizedPath
+    }
   }
   return acc
 }, {})
