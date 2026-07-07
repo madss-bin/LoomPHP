@@ -1,4 +1,4 @@
-# LoomPHP — Opinionated Vanilla PHP Boilerplate
+# LoomPHP
 
 LoomPHP is a lightweight, modern boilerplate designed to bring framework-level developer experience (DX) and tooling to vanilla PHP applications. It combines file-based routing, global middleware hooks, and a Svelte-like reactive client store with Tailwind CSS v4, Basecoat UI components, and Vite-powered Hot Module Replacement (HMR).
 
